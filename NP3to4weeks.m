@@ -6,7 +6,7 @@ outputmatrix=zeros(100,4);
 while testcount<=1
     testcount=testcount+1;
 
-%simulation for npk merging events 
+%simulation for np merging events 
 
 endpointgridsize=600; %final amount space that can be occupied 
 initialseeding=28872; %initial observed cell amount e.g 3 weeks  mean(totalcell.np3weeks$totalcell)= 29877.8 median(totalcell.np3weeks$totalcell)=28872
@@ -15,7 +15,7 @@ grid=zeros(endpointgridsize,endpointgridsize);
 %seeding clones and cells
 seedingclones=650;%median total # clones at 3 weeks=643.5 mean =  713.05
 
-sizechart=[2 0.17;3 0.075;4 0.035;5 0.021;8 0.046; 13 0.016 ;18 0.008; 23 0.0048; 28 0.0030 ]; %percentage of clone sizes based on npk week3, size 8 (6-10),13(11-15) .etc 
+sizechart=[2 0.17;3 0.075;4 0.035;5 0.021;8 0.046; 13 0.016 ;18 0.008; 23 0.0048; 28 0.0030 ]; %percentage of clone sizes based on np week3, size 8 (6-10),13(11-15) .etc 
 sizechart=flip(sizechart,1);
 sizechart(:,3)=ceil(sizechart(:,2)*seedingclones);
 
